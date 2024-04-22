@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Welcome to Our Social Network</title>
+    <style>
+        /* Основные стили для всей страницы */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* Стили для заголовка и навигации */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #555;
+        }
+
+        nav ul li a:hover {
+            background-color: #777;
+        }
+
+        /* Стили для основного контента */
+        section {
+            padding: 20px;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        /* Стили для боковой панели */
+        aside {
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #e0e0e0;
+        }
+
+        /* Стили для нижнего колонтитула */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            bottom: 0px;
+            position: fixed;
+            width: 100%;
+
+
+        }
+    </style>
+</head>
+<body>
+<!-- Заголовок и навигация -->
+<header>
+    <h1>Welcome to Our Social Network</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/users/create">Register</a></li>
+            <li><a href="/users/all">User List</a></li>
+            <li><a href="/chat">Сhat</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Основной контент -->
+<section style="text-align: center">
+    <article>
+        <h2>About Our Network</h2>
+        <p>Welcome to our social network, where you can create an account, connect with other users, and share your experiences.</p>
+    </article>
+
+    <aside>
+        <h3>Important Information</h3>
+        <p>Be sure to register to access all the features of our network. Connect with other users and enjoy the community.</p>
+    </aside>
+</section>
+
+<!-- Нижний колонтитул -->
+<footer>
+    <p>&copy; 2024 Our Social Network. All rights reserved.</p>
+    <p>Contact us at contact@oursocialnetwork.com</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat with WebSocket</title>
+    <script>
+        var socket = new WebSocket("ws://localhost:5500/chat");  // Подключение к серверу WebSocket
+
+        socket.onopen = function() {
+            console.log("Connection established");
+        };
+
+        socket.onmessage = function(event) {
+            console.log("Received:", event.data);  // Прослушивание входящих сообщений
+        };
+
+        socket.onclose = function() {
+            console.log("Connection closed");
+        };
+
+        function sendMessage() {
+            var message = document.getElementById("message").value;
+            socket.send(message);  // Отправка сообщения
+        }
+    </script>
+</head>
+<body>
+<h1>Chat with WebSocket</h1>
+<input type="text" id="message" placeholder="Enter your message">
+<button onclick="sendMessage()">Send</button>  <!-- Отправка сообщения -->
+</body>
+</html>
